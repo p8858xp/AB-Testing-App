@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.ball{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 100px;
+    left: 45%;
+    animation: bounce 0.9s infinite;
+}
+.red{
+    background-color:#F07171;
+}
+.blue{
+    background-color: #7BCFF9
+}
+@keyframes bounce {
+    10%{
+        width: 50px;
+        height: 50px;
+    }
+    30%{
+        width: 40px;
+        height: 50px;
+    }
+    50%{
+        width: 57px;
+        height: 30px;
+        transform: translateY(240px);
+    }
+    75%{
+        width: 57px;
+        height: 50px; 
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.shadow{
+    background-color: rgba(8,8,8,0.05);
+    height: 10px;
+    width: 65px;
+    border-radius: 50%;
+    position: relative;
+    top: 310px;
+    left: 44.3%;
+    z-index: -1;
+    animation: shrink 0.9s infinite;
+}
+@keyframes shrink{
+    50%{
+        transform: scaleX(0.5);
+    }
+}
+#counter{
+    position: relative;
+    top: 100px;
+    left: 80%;
+    font-size: 3em;
+}
+.redCounter{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F07171;;
+    color: transparent;
+}
+.blueCounter{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #7BCFF9;
+    color: transparent;
+}
+#reset{
+    padding: 15px 32px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 155px;
+    left: 10%;
+    width: 100px;
+    height: 50px;
+    letter-spacing: 2.5px;
+}
+#reset:focus{
+    outline: none;
+}
+.redButton{
+    border: 2px solid #F07171;;
+    background-color: transparent;
+    color: #F07171;;
+}
+.redButton:hover{
+    background-color: #F07171;;
+    color: white;
+}
+.redButton:active{
+    color: #F07171;;
+}
+.blueButton{
+    border: 2px solid #7BCFF9;
+    background-color: transparent;
+    color: #7BCFF9;
+}
+.blueButton:hover{
+    background-color: #7BCFF9;
+    color: white;
+}
+.blueButton:active{
+    color: #7BCFF9;
+}
+
+
